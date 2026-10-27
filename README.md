@@ -25,6 +25,11 @@ Használat: Futtasd a(z) windows-cleanup-utility.bat -t.
 
 Clenaup naplózása: A futás eredménye a következő fájlba kerül: cleanup.log .
 
+Fontos tudnivaló:
+
+Mivel a program egy nem aláírt batch szkript, a Windows SmartScreen vagy az Intelligens alkalmazáskezelés figyelmeztetést jeleníthet meg futtatáskor.
+A forráskód teljes egészében megtekinthető és ellenőrizhető a repositoryban.
+
 Állapot:
 
 Fejlesztés alatt (jelenleg V2.0)
