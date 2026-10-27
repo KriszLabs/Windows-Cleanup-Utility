@@ -30,6 +30,7 @@ Fontos tudnivaló:
 Mivel a program egy nem aláírt batch szkript, a Windows SmartScreen vagy az Intelligens alkalmazáskezelés figyelmeztetést jeleníthet meg futtatáskor.
 A forráskód teljes egészében megtekinthető és ellenőrizhető a repositoryban.
 
+
 Állapot:
 
 Fejlesztés alatt (jelenleg V2.0)
