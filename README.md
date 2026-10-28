@@ -49,11 +49,11 @@ Egyszerű, egyetlen fájlból álló Windows batch script, amely a rendszer idei
 1. Töltsd le a `windows-cleanup-utility.bat` fájlt (vagy klónozd a repót).
 2. Futtasd dupla kattintással — a script automatikusan rendszergazdai jogot kér. Parancssorból:
 
-   ```bat
-   windows-cleanup-utility.bat
-   ```
+ ```bat
+ windows-cleanup-utility.bat
+ ```
 
-3. A futás végén egy billentyű lenyomásával bezárható az ablak.
+3. A futás végén egy tetszőleges billentyű lenyomásával bezárható az ablak.
 
 > **Megjegyzés:** a Prefetch tisztítás alapból ki van kapcsolva; a script elején egy kapcsolóval engedélyezhető.
 
@@ -61,9 +61,9 @@ Egyszerű, egyetlen fájlból álló Windows batch script, amely a rendszer idei
 
 A futás eredménye (törölt fájlok, kihagyott elemek, hibák) a következő fájlba kerül:
 
-   ```text
-   cleanup.log
-   ```
+```text
+cleanup.log
+```
 
 ## Működés
 
@@ -84,14 +84,13 @@ A futás eredménye (törölt fájlok, kihagyott elemek, hibák) a következő f
 
 Hibajelentést és javaslatot Issue-ban várok. Pull request esetén:
 
-- Forkold a repót és hozz létre külön ágat (`feature/uj-funkcio`).
 - Tartsd a `.bat` fájlt UTF-8 (BOM nélküli), CRLF sorvéggel.
 - Új biztonsági vagy tisztítási funkció esetén frissítsd a README funkciótáblázatát és a `CHANGELOG.md` fájlt.
 - A PR leírásában add meg, melyik Windows-verzión próbáltad ki.
 
 ## Licenc
 
-- [MIT](LICENSE)
+- [MIT](LICENSE).
 
 ## Állapot
 
