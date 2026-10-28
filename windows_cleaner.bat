@@ -10,7 +10,7 @@ net session >nul 2>&1
 if errorlevel 1 (
     echo.
     echo ============================================================
-    echo RENDSZERGAZDAI JOGOSULTSAG SZUKSEGES A FUTTATASHOZ
+    echo     RENDSZERGAZDAI JOGOSULTSAG SZUKSEGES A FUTTATASHOZ
     echo ============================================================
     echo.
 
@@ -34,7 +34,7 @@ set /a FAILED=0
 
 (
 echo ===============================================
-echo [%DATE% %TIME%] Cleanup indult
+echo     [%DATE% %TIME%] Cleanup indult
 echo ===============================================
 )>>"%LOGFILE%"
 
@@ -46,7 +46,7 @@ cls
 
 echo.
 echo =================================================
-echo             WINDOWS CLEANUP UTILITY v2.2
+echo     WINDOWS CLEANUP UTILITY v2.2
 echo =================================================
 echo.
 echo [ADMIN] Jogosultsag rendben
@@ -57,7 +57,7 @@ echo.
 :: ===================================================
 
 echo ===============================================
-echo [1/3] USER TEMP
+echo     [1/3] USER TEMP
 echo ===============================================
 call :CLEANFOLDER "%TEMP%"
 
@@ -67,7 +67,7 @@ call :CLEANFOLDER "%TEMP%"
 
 echo.
 echo ==============================================
-echo [2/3] WINDOWS TEMP
+echo     [2/3] WINDOWS TEMP
 echo =============================================
 call :CLEANFOLDER "C:\Windows\Temp"
 
@@ -76,7 +76,7 @@ call :CLEANFOLDER "C:\Windows\Temp"
 :: =============================================
 echo.
 echo ==========================================
-echo [3/3] PREFETCH
+echo     [3/3] PREFETCH
 echo =============================================
 echo [INFO] Megjegyzes: a Prefetch torlese utan a kovetkezo
 echo        programinditasok lasabbak lehetnek, amig a
@@ -93,7 +93,7 @@ call :CLEANFOLDER "C:\Windows\Prefetch"
 
 echo.
 echo ==============================================
-echo OSSZEGZES:
+echo     OSSZEGZES:
 echo ===============================================
 echo.
 echo Osszes vizsgalt fajl : %TOTAL%
@@ -106,7 +106,7 @@ echo.
 
 (
 echo ============================================================
-echo [%DATE% %TIME%] Cleanup vege - OK:%SUCCESS% FAIL:%FAILED% OSSZ:%TOTAL%
+echo     [%DATE% %TIME%] Cleanup vege - OK:%SUCCESS% FAIL:%FAILED% OSSZ:%TOTAL%
 echo ============================================================
 echo.
 )>>"%LOGFILE%"
@@ -115,7 +115,7 @@ pause
 exit /b
 
 :: ============================================================
-:: CLEANFOLDER:
+::     CLEANFOLDER:
 :: ============================================================
 
 :CLEANFOLDER
@@ -128,7 +128,7 @@ echo %TARGET%
 echo.
 
 :: ===============================================
-:: LETEZIK-E:
+::     LETEZIK-E:
 :: ===============================================
 
 if not exist "%TARGET%" (
@@ -137,7 +137,7 @@ if not exist "%TARGET%" (
 )
 
 :: ===============================================
-:: KRITIKUS MAPPA ELLENI VEDELEM:
+::     KRITIKUS MAPPA ELLENI VEDELEM:
 :: ===============================================
 
 if /I "%TARGET%"=="C:\" (
@@ -166,7 +166,7 @@ if /I "%TARGET%"=="C:\Program Files (x86)" (
 )
 
 :: ==============================================
-:: REPARSE POINT VIZSGALAT:
+::     REPARSE POINT VIZSGALAT:
 :: ==============================================
 
 fsutil reparsepoint query "%TARGET%" >nul 2>&1
@@ -181,7 +181,7 @@ if not errorlevel 1 (
 setlocal DisableDelayedExpansion
 
 :: ===============================================
-:: FAJLOK TORLESE:
+::     FAJLOK TORLESE:
 :: ===============================================
 
 for /f "usebackq delims=" %%F in (`dir /a-d-l /b /s "%TARGET%" 2^>nul`) do (
@@ -209,7 +209,7 @@ for /f "usebackq delims=" %%F in (`dir /a-d-l /b /s "%TARGET%" 2^>nul`) do (
 )
 
 :: ================================================
-:: URES MAPPAK TORLESE
+::     URES MAPPAK TORLESE
 :: ================================================
 
 for /f "usebackq delims=" %%D in (`dir /ad /b /s "%TARGET%" 2^>nul ^| sort /R`) do (
