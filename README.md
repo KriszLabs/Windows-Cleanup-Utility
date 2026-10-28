@@ -91,9 +91,9 @@ Hibajelentést és javaslatot Issue-ban várok. Pull request esetén:
 
 ## Licenc
 
-[MIT](LICENSE)
+- [MIT](LICENSE)
 
 ## Állapot
 
-Fejlesztés alatt — jelenleg **V2.0**  
-Utolsó frissítés: 2026. 10. 27.
+- Fejlesztés alatt — jelenleg **V2.0**  
+- Utolsó frissítés: 2026. 10. 28.
