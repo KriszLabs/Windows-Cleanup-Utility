@@ -61,9 +61,9 @@ Egyszerű, egyetlen fájlból álló Windows batch script, amely a rendszer idei
 
 A futás eredménye (törölt fájlok, kihagyott elemek, hibák) a következő fájlba kerül:
 
-```text
-cleanup.log
-```
+   ```text
+   cleanup.log
+   ```
 
 ## Működés
 
@@ -78,7 +78,7 @@ cleanup.log
 - A Windows által zárolt fájlokat (pl. futó alkalmazások temp-fájljait) nem tudja törölni — ezek a naplóba kerülnek.
 - A Prefetch tisztítás rövid távon lassíthatja az alkalmazások első indítását.
 - Nem aláírt batch szkript: a Windows SmartScreen vagy az Intelligens alkalmazáskezelés figyelmeztetést jeleníthet meg futtatáskor. A forráskód teljes egészében megtekinthető és ellenőrizhető a repóban.
-- Windows 10 és 11-es rendszerben tesztelt.
+- Windows 10 vagy régebbi környezetben nem tesztelt.
 
 ## Hozzájárulás
 
