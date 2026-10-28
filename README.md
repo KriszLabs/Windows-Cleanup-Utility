@@ -90,7 +90,7 @@ Hibajelentést és javaslatot Issue-ban várok. Pull request esetén:
 
 ## Licenc
 
-- [MIT](LICENSE).
+- [MIT](LICENSE)
 
 ## Állapot
 
