@@ -78,7 +78,7 @@ cleanup.log
 - A Windows által zárolt fájlokat (pl. futó alkalmazások temp-fájljait) nem tudja törölni — ezek a naplóba kerülnek.
 - A Prefetch tisztítás rövid távon lassíthatja az alkalmazások első indítását.
 - Nem aláírt batch szkript: a Windows SmartScreen vagy az Intelligens alkalmazáskezelés figyelmeztetést jeleníthet meg futtatáskor. A forráskód teljes egészében megtekinthető és ellenőrizhető a repóban.
-- Windows 7 és régebbi rendszereken nem tesztelt.
+- Windows 10 és 11-es rendszerben tesztelt.
 
 ## Hozzájárulás
 
